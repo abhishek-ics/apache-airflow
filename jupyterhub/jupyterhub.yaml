@@ -403,7 +403,7 @@ singleuser:
   startTimeout: 300
   cpu:
     limit:
-    guarantee: 1G
+    guarantee: 1
   memory:
     limit:
     guarantee: 1G
