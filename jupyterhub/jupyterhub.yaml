@@ -40,7 +40,7 @@ hub:
       admin_access: true
       authenticator_class: dummy
   service:
-    type: clusterIP
+    type: LoadBalancer
     annotations: {}
     ports:
       nodePort:
