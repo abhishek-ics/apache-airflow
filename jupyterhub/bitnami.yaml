@@ -379,7 +379,7 @@ hub:
   containerSecurityContext:
     enabled: true
     seLinuxOptions: null
-    runAsUser: 0
+    runAsUser: 1001
     runAsGroup: 0
     runAsNonRoot: true
     privileged: false
