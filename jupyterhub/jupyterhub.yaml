@@ -43,12 +43,10 @@ hub:
     type: LoadBalancer
     annotations: {}
     ports:
-      nodePort: 
-    extraPorts:
-    - name: jupyterhub
-      port: 8081
+    - port: 8081
       targetPort: 8081
-      protocol: TCP
+      name: jupyterhub 
+    extraPorts: []
     loadBalancerIP:
   baseUrl: /
   cookieSecret:
