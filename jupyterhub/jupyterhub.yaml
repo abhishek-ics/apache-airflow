@@ -40,7 +40,7 @@ hub:
       admin_access: true
       authenticator_class: dummy
   service:
-    type: LoadBalancer
+    type: NodePort
     annotations: {}
     ports:
       nodePort:
@@ -79,6 +79,12 @@ hub:
   annotations: {}
   command: []
   args: []
+  cpu:
+    limit: .5
+    guarantee: .5
+  memory:
+    limit: 3G
+    guarantee: 1G
   extraConfig: {}
   extraFiles: {}
   extraEnv: {}
@@ -402,10 +408,10 @@ singleuser:
     pullSecrets: []
   startTimeout: 300
   cpu:
-    limit:
-    guarantee: 1
+    limit: .5
+    guarantee: .5
   memory:
-    limit:
+    limit: 3G
     guarantee: 1G
   extraResource:
     limits: {}
