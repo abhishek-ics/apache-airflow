@@ -43,7 +43,7 @@ hub:
     type: NodePort
     annotations: {}
     ports:
-      nodePort:
+      nodePort: 32000
     extraPorts: []
     loadBalancerIP:
   baseUrl: /
