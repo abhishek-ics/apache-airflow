@@ -402,7 +402,7 @@ singleuser:
     pullSecrets: []
   startTimeout: 300
   cpu:
-    limit: 500m
+    limit: 500
     guarantee:
   memory:
     limit:
