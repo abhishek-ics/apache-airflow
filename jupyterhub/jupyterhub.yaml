@@ -12,6 +12,9 @@ enabled:
 # Helm template values will be made available there.
 custom: {}
 
+rbac:
+  create: true
+
 # imagePullSecret is configuration to create a k8s Secret that Helm chart's pods
 # can get credentials from to pull their images.
 imagePullSecret:
@@ -145,9 +148,6 @@ hub:
     name:
     annotations: {}
   extraPodSpec: {}
-
-rbac:
-  create: true
 
 # proxy relates to the proxy pod, the proxy-public service, and the autohttps
 # pod and proxy-http service.
