@@ -40,12 +40,10 @@ hub:
       admin_access: true
       authenticator_class: dummy
   service:
-    type: LoadBalancer
+    type: clusterIP
     annotations: {}
     ports:
-    - port: 8081
-      targetPort: 8081
-      name: jupyterhub 
+      nodePort:
     extraPorts: []
     loadBalancerIP:
   baseUrl: /
