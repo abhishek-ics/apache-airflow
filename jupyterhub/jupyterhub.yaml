@@ -79,12 +79,6 @@ hub:
   annotations: {}
   command: []
   args: []
-  cpu:
-    limit: .5
-    guarantee: .5
-  memory:
-    limit: 3G
-    guarantee: 1G
   extraConfig: {}
   extraFiles: {}
   extraEnv: {}
