@@ -129,7 +129,7 @@ hub:
     # be able to restart if it becomes unresponsive for ~5 min.
     enabled: true
     initialDelaySeconds: 300
-    periodSeconds: 10
+    periodSeconds: 100
     failureThreshold: 30
     timeoutSeconds: 3
   readinessProbe:
