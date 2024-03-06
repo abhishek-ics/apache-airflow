@@ -601,7 +601,7 @@ prePuller:
   extraTolerations: []
   # hook relates to the hook-image-awaiter Job and hook-image-puller DaemonSet
   hook:
-    enabled: false
+    enabled: true
     pullOnlyOnChanges: true
     # image and the configuration below relates to the hook-image-awaiter Job
     image:
