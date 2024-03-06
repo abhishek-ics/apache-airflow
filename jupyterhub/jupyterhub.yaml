@@ -47,7 +47,6 @@ hub:
     extraPorts:
     - name: jupyterhub
       port: 8081
-      targetPort: 8081
     loadBalancerIP:
   baseUrl: /
   cookieSecret:
